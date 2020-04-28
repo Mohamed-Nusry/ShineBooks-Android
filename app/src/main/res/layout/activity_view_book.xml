@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewBook">
+
+
+
+
+    <ImageView
+        android:id="@+id/bkimg"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="3dp"
+        android:background="#B6A0A0"
+        android:src="@drawable/ic_book_black_24dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/bkname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#090C2E"
+        android:text="The book name"
+        android:gravity="center"
+       />
+
+
+
+    <TextView
+        android:id="@+id/bkauth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The book author"
+        android:textSize="15sp"
+        android:textColor="#425304"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        />
+
+        <TextView
+            android:id="@+id/bkprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD 50"
+            android:textSize="15sp"
+            android:textColor="#425304"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy the book buy clicking the Buy now button"
+            android:textSize="15sp"
+            android:textColor="#425304"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnbuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy now"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="140dp"/>
+
+</LinearLayout>

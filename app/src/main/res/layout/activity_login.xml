@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk1"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:text="Shine  Books"/>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="100dp">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/uemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/upass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:background="@color/design_default_color_primary"
+        android:text="Login" />
+
+
+
+
+
+    <com.google.android.gms.common.internal.SignInButtonImpl
+        android:id="@+id/sign_in_button_impl"
+        android:layout_width="177dp"
+        android:clickable="true"
+        android:layout_height="35dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="15dp"
+        android:innerRadius="100dp"
+        android:shape="ring"
+        android:background="@drawable/google"/>
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="15dp"
+        />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:linksClickable="true"
+            android:textColorLink="@color/design_default_color_primary"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginLeft="130dp"/>
+
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="184dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="-30dp"
+            android:text="Create an account"
+            android:background="#B718A718"
+            android:textColor="#ED990B0B"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
